@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.github.potatoxf</groupId>
+        <artifactId>tool-cabinet</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <artifactId>tool-cabinet-builtin</artifactId>
+    <packaging>pom</packaging>
+    <properties>
+        <tool-cabinet-builtin.version>1.0.0</tool-cabinet-builtin.version>
+    </properties>
+    <modules>
+        <module>tool-cabinet-builtin-api</module>
+        <module>tool-cabinet-builtin-cache</module>
+        <module>tool-cabinet-builtin-servlet</module>
+        <module>tool-cabinet-builtin-mail</module>
+    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.github.potatoxf</groupId>
+            <artifactId>tool-cabinet-builtin-api</artifactId>
+            <version>${tool-cabinet-builtin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.potatoxf</groupId>
+            <artifactId>tool-cabinet-builtin-cache</artifactId>
+            <version>${tool-cabinet-builtin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.potatoxf</groupId>
+            <artifactId>tool-cabinet-builtin-servlet</artifactId>
+            <version>${tool-cabinet-builtin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.potatoxf</groupId>
+            <artifactId>tool-cabinet-builtin-mail</artifactId>
+            <version>${tool-cabinet-builtin.version}</version>
+        </dependency>
+    </dependencies>
+</project>
